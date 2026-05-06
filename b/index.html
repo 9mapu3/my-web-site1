@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff0f7" />
+    <title>POP PARADE — Colorful Capsule</title>
+    <meta
+      name="description"
+      content="NOIRÉと真逆。白×パステル×ステッカーの“超ポップ”デモトップページ。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">本文へ</a>
+
+    <div class="fx" aria-hidden="true">
+      <div class="fx__grid"></div>
+      <div class="fx__blob fx__blob--a"></div>
+      <div class="fx__blob fx__blob--b"></div>
+      <div class="fx__noise"></div>
+    </div>
+
+    <header class="top" data-elevate>
+      <div class="wrap top__bar">
+        <div class="left">
+          <span class="pill pill--hot">NEW</span>
+          <span class="micro muted">“SUGAR SPLASH” — 48h限定（デモ）</span>
+        </div>
+        <div class="right micro">
+          <button class="link" type="button" data-action="toast" data-toast="配送（ダミー）">配送</button>
+          <span class="dot">·</span>
+          <button class="link" type="button" data-action="toast" data-toast="返品（ダミー）">返品</button>
+          <span class="dot">·</span>
+          <button class="link" type="button" data-action="open-modal" data-modal="help">FAQ</button>
+        </div>
+      </div>
+
+      <div class="wrap top__nav">
+        <button class="icon" type="button" data-action="toggle-drawer" data-drawer="menu" aria-label="メニュー">
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <a class="logo" href="#" aria-label="POP PARADE">
+          <span class="logo__mark" aria-hidden="true">PP</span>
+          <span class="logo__name">POP PARADE</span>
+          <span class="logo__tag">Colorful Capsule</span>
+        </a>
+
+        <nav class="nav" aria-label="主要">
+          <a class="nav__a" href="#top">Top</a>
+          <a class="nav__a" href="#bento">Bento</a>
+          <a class="nav__a" href="#stickers">Stickers</a>
+          <a class="nav__a" href="#play">Play</a>
+          <a class="nav__a" href="#faq">FAQ</a>
+        </nav>
+
+        <div class="actions">
+          <button class="chip" type="button" data-action="toggle-theme" aria-label="テーマ">
+            <span class="chip__i" aria-hidden="true">◐</span>
+            Theme
+          </button>
+          <button class="chip" type="button" data-action="open-kbd" aria-label="検索">
+            <span class="chip__i" aria-hidden="true">⌘</span>
+            Search
+            <span class="kbd" aria-hidden="true">Ctrl K</span>
+          </button>
+          <button class="chip" type="button" data-action="toggle-drawer" data-drawer="cart" aria-label="カート">
+            <span class="chip__i" aria-hidden="true">🛒</span>
+            Cart
+            <span class="count" data-cart-count>2</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="wrap hero__grid">
+          <div class="hero__copy">
+            <div class="hero__row">
+              <span class="pill pill--hot">NEW</span>
+              <span class="pill pill--soft">Sticker-first</span>
+              <div class="timer" data-timer aria-label="残り時間">
+                <span class="timer__t">残り</span>
+                <span class="timer__v" data-timer-v>47:59</span>
+              </div>
+            </div>
+            <h1 class="h1">ポップは、<span class="grad">気分</span>になる。</h1>
+            <p class="lead">
+              パステル、ステッカー、ドット。<br />
+              “かわいいを正義にする” カラーカプセル（デモ）。
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--pri" href="#bento">まず全体像を見る</a>
+              <a class="btn btn--ghost" href="#stickers">ステッカー棚へ</a>
+              <button class="btn btn--ghost" type="button" data-action="open-kbd">検索</button>
+            </div>
+
+            <div class="stats" aria-label="指標">
+              <div class="stat">
+                <div class="stat__n">3 colors</div>
+                <div class="stat__l muted">mix & match</div>
+              </div>
+              <div class="stat">
+                <div class="stat__n">0 stress</div>
+                <div class="stat__l muted">easy UI</div>
+              </div>
+              <div class="stat">
+                <div class="stat__n">48h</div>
+                <div class="stat__l muted">limited (demo)</div>
+              </div>
+            </div>
+
+            <div class="marq" aria-label="キーワード">
+              <div class="marq__t">
+                <span>STICKER</span><span>PASTEL</span><span>DOTS</span><span>ROUND</span><span>FUN</span><span>CHEER</span>
+                <span>STICKER</span><span>PASTEL</span><span>DOTS</span><span>ROUND</span><span>FUN</span><span>CHEER</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <div class="poster" data-img="poster">
+              <div class="poster__ui">
+                <div class="float">
+                  <span class="pill pill--glass">today’s mood</span>
+                  <button class="pill pill--glass" type="button" data-action="toast" data-toast="今日の気分を保存（デモ）">
+                    save mood
+                  </button>
+                </div>
+                <div class="float float--b">
+                  <div class="stack">
+                    <div class="mini">
+                      <div class="mini__k">DROP</div>
+                      <div class="mini__t">SUGAR SPLASH</div>
+                    </div>
+                    <div class="mini">
+                      <div class="mini__k">COLOR</div>
+                      <div class="mini__t">Bubble Pink</div>
+                    </div>
+                  </div>
+                  <button class="icon icon--round" type="button" data-action="open-modal" data-modal="video" aria-label="再生">
+                    ▶
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="rail" aria-label="クイックカード">
+              <button class="q" type="button" data-action="quick" data-sku="HD-001">
+                <span class="q__img" data-img="q1"></span>
+                <span class="q__b">
+                  <span class="q__t">Sticker Hoodie</span>
+                  <span class="q__m muted">¥18,900</span>
+                </span>
+                <span class="q__a">＋</span>
+              </button>
+              <button class="q" type="button" data-action="quick" data-sku="BG-004">
+                <span class="q__img" data-img="q2"></span>
+                <span class="q__b">
+                  <span class="q__t">Candy Bag</span>
+                  <span class="q__m muted">¥9,600</span>
+                </span>
+                <span class="q__a">＋</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENTO GRID (reference-inspired structure) -->
+      <section class="sec" id="bento">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">Bento</div>
+              <h2 class="h2">まずは“全体像”をひと目で。</h2>
+            </div>
+            <div class="head__r">
+              <button class="btn btn--ghost" type="button" data-action="toast" data-toast="おすすめを表示（デモ）">おすすめ</button>
+              <button class="btn btn--pri" type="button" data-action="toast" data-toast="はじめてガイド（デモ）">はじめて</button>
+            </div>
+          </div>
+
+          <div class="bento" aria-label="Bento grid">
+            <article class="bCard bCard--big">
+              <div class="bCard__k">Signature</div>
+              <div class="bCard__t">ステッカーみたいなUI</div>
+              <div class="bCard__s muted">角丸・太線・影で“貼った感”。</div>
+              <div class="bCard__m" data-img="b1"></div>
+              <div class="bCard__f">
+                <button class="btn btn--ghost" type="button" data-action="toast" data-toast="デザイン解説（デモ）">なぜこう見える？</button>
+                <button class="btn btn--pri" type="button" data-action="open-modal" data-modal="help">FAQ</button>
+              </div>
+            </article>
+
+            <article class="bCard">
+              <div class="bCard__k">Colors</div>
+              <div class="bCard__t">3色で成立</div>
+              <div class="bCard__s muted">ピンク/ミント/スカイ。</div>
+              <div class="bCard__m" data-img="b2"></div>
+            </article>
+
+            <article class="bCard">
+              <div class="bCard__k">Type</div>
+              <div class="bCard__t">丸い文字で安心</div>
+              <div class="bCard__s muted">読めるポップを目指す。</div>
+              <div class="bCard__m" data-img="b3"></div>
+            </article>
+
+            <article class="bCard">
+              <div class="bCard__k">Motion</div>
+              <div class="bCard__t">軽い反応だけ</div>
+              <div class="bCard__s muted">派手すぎない“気持ちよさ”。</div>
+              <div class="bCard__m" data-img="b4"></div>
+            </article>
+
+            <article class="bCard bCard--wide">
+              <div class="bCard__k">Try</div>
+              <div class="bCard__t">気分ミキサー</div>
+              <div class="bCard__s muted">下のスライダーで色の“やさしさ”を調整。</div>
+              <div class="bCard__m" data-img="b5"></div>
+              <div class="bCard__f">
+                <a class="btn btn--pri" href="#play">ミキサーへ</a>
+                <a class="btn btn--ghost" href="#stickers">ステッカー棚へ</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKER SHELF -->
+      <section class="sec" id="stickers">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">Sticker shelf</div>
+              <h2 class="h2">“貼りたい” から選ぶ。</h2>
+            </div>
+            <div class="head__r">
+              <div class="seg" role="tablist" aria-label="表示">
+                <button class="seg__b is-on" type="button" data-action="view" data-view="grid" role="tab" aria-selected="true">Grid</button>
+                <button class="seg__b" type="button" data-action="view" data-view="wide" role="tab" aria-selected="false">Wide</button>
+                <button class="seg__b" type="button" data-action="view" data-view="compact" role="tab" aria-selected="false">Mini</button>
+              </div>
+              <button class="btn btn--ghost" type="button" data-action="toggle-drawer" data-drawer="filters">Filters</button>
+            </div>
+          </div>
+
+          <div class="bar">
+            <div class="tags" aria-label="タグ">
+              <button class="tag is-on" type="button" data-action="tag" data-tag="new">New</button>
+              <button class="tag" type="button" data-action="tag" data-tag="lime">Mint</button>
+              <button class="tag" type="button" data-action="tag" data-tag="pink">Pink</button>
+              <button class="tag" type="button" data-action="tag" data-tag="tech">Cute</button>
+              <button class="tag" type="button" data-action="tag" data-tag="pvc">Glossy</button>
+            </div>
+            <div class="sp"></div>
+            <label class="sort micro">
+              sort
+              <select class="sel" data-action="sort">
+                <option value="featured">featured</option>
+                <option value="priceAsc">price ↑</option>
+                <option value="priceDesc">price ↓</option>
+                <option value="rating">rating</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- keep product cards (demo) -->
+          <div class="grid" data-grid data-view="grid" aria-live="polite">
+            <article class="card" data-tags="new lime tech" data-price="18900" data-rating="4.9">
+              <div class="card__m">
+                <div class="img" data-img="p1"></div>
+                <div class="badge">
+                  <span class="pill pill--hot">HOT</span>
+                  <span class="pill pill--soft">Limited</span>
+                </div>
+                <div class="ops">
+                  <button class="icon icon--mini" type="button" data-action="fav" aria-label="お気に入り">♥</button>
+                  <button class="icon icon--mini" type="button" data-action="open-modal" data-modal="qv" data-sku="HD-001" aria-label="クイックビュー">👁</button>
+                </div>
+              </div>
+              <div class="card__b">
+                <div class="row">
+                  <div class="nm">Sticker Hoodie</div>
+                  <div class="pr">¥18,900</div>
+                </div>
+                <div class="row">
+                  <div class="rate" aria-label="評価 4.9">
+                    <span class="stars" style="--r:4.9"></span>
+                    <span class="micro muted">4.9</span>
+                  </div>
+                  <div class="dots">
+                    <span style="--c:#34f0d0"></span><span style="--c:#ff5fd3"></span><span style="--c:#3ad6ff"></span>
+                  </div>
+                </div>
+                <p class="ds muted">“貼った感”を着る、デモフーディ。</p>
+                <div class="row row--cta">
+                  <button class="btn btn--pri btn--block" type="button" data-action="add" data-sku="HD-001">Add</button>
+                  <button class="btn btn--ghost" type="button" data-action="toast" data-toast="サイズ表（デモ）">Size</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-tags="new pink tech" data-price="12400" data-rating="4.8">
+              <div class="card__m">
+                <div class="img" data-img="p2"></div>
+                <div class="badge">
+                  <span class="pill pill--glow">NEW</span>
+                </div>
+                <div class="ops">
+                  <button class="icon icon--mini" type="button" data-action="fav" aria-label="お気に入り">♥</button>
+                  <button class="icon icon--mini" type="button" data-action="open-modal" data-modal="qv" data-sku="TS-010" aria-label="クイックビュー">👁</button>
+                </div>
+              </div>
+              <div class="card__b">
+                <div class="row">
+                  <div class="nm">Pop Tee</div>
+                  <div class="pr">¥12,400</div>
+                </div>
+                <div class="row">
+                  <div class="rate" aria-label="評価 4.8">
+                    <span class="stars" style="--r:4.8"></span>
+                    <span class="micro muted">4.8</span>
+                  </div>
+                  <div class="dots">
+                    <span style="--c:#ff5fd3"></span><span style="--c:#221b2a"></span>
+                  </div>
+                </div>
+                <p class="ds muted">元気になるピンク。ノイズじゃなく笑顔。</p>
+                <div class="row row--cta">
+                  <button class="btn btn--pri btn--block" type="button" data-action="add" data-sku="TS-010">Add</button>
+                  <button class="btn btn--ghost" type="button" data-action="toast" data-toast="在庫通知（デモ）">Ping</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-tags="pvc tech" data-price="9600" data-rating="4.6">
+              <div class="card__m">
+                <div class="img" data-img="p3"></div>
+                <div class="badge">
+                  <span class="pill pill--soft">Restock</span>
+                </div>
+                <div class="ops">
+                  <button class="icon icon--mini" type="button" data-action="fav" aria-label="お気に入り">♥</button>
+                  <button class="icon icon--mini" type="button" data-action="open-modal" data-modal="qv" data-sku="BG-004" aria-label="クイックビュー">👁</button>
+                </div>
+              </div>
+              <div class="card__b">
+                <div class="row">
+                  <div class="nm">Candy Bag</div>
+                  <div class="pr">¥9,600</div>
+                </div>
+                <div class="row">
+                  <div class="rate" aria-label="評価 4.6">
+                    <span class="stars" style="--r:4.6"></span>
+                    <span class="micro muted">4.6</span>
+                  </div>
+                  <div class="dots">
+                    <span style="--c:#3ad6ff"></span><span style="--c:#34f0d0"></span>
+                  </div>
+                </div>
+                <p class="ds muted">透明じゃなく“つや”。甘いツール。</p>
+                <div class="row row--cta">
+                  <button class="btn btn--pri btn--block" type="button" data-action="add" data-sku="BG-004">Add</button>
+                  <button class="btn btn--ghost" type="button" data-action="toast" data-toast="ギフト（デモ）">Gift</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-tags="lime pink" data-price="14800" data-rating="4.7">
+              <div class="card__m">
+                <div class="img" data-img="p4"></div>
+                <div class="badge">
+                  <span class="pill pill--soft">Pre</span>
+                </div>
+                <div class="ops">
+                  <button class="icon icon--mini" type="button" data-action="fav" aria-label="お気に入り">♥</button>
+                  <button class="icon icon--mini" type="button" data-action="open-modal" data-modal="qv" data-sku="CP-002" aria-label="クイックビュー">👁</button>
+                </div>
+              </div>
+              <div class="card__b">
+                <div class="row">
+                  <div class="nm">Happy Cap</div>
+                  <div class="pr">¥14,800</div>
+                </div>
+                <div class="row">
+                  <div class="rate" aria-label="評価 4.7">
+                    <span class="stars" style="--r:4.7"></span>
+                    <span class="micro muted">4.7</span>
+                  </div>
+                  <div class="dots">
+                    <span style="--c:#ff5fd3"></span><span style="--c:#34f0d0"></span><span style="--c:#221b2a"></span>
+                  </div>
+                </div>
+                <p class="ds muted">小物は“効く”。今日を上げる帽子。</p>
+                <div class="row row--cta">
+                  <button class="btn btn--pri btn--block" type="button" data-action="add" data-sku="CP-002">Add</button>
+                  <button class="btn btn--ghost" type="button" data-action="toast" data-toast="コーデ提案（デモ）">Mix</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLAY -->
+      <section class="sec sec--alt" id="play">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">Play</div>
+              <h2 class="h2">気分ミキサー（色だけで遊ぶ）</h2>
+            </div>
+            <div class="head__r">
+              <button class="btn btn--ghost" type="button" data-action="shuffle">Shuffle</button>
+              <button class="btn btn--pri" type="button" data-action="toast" data-toast="保存しました（デモ）">Save</button>
+            </div>
+          </div>
+
+          <div class="mix">
+            <div class="mix__left">
+              <div class="mixCard">
+                <div class="mixCard__t">Mood Builder</div>
+                <div class="mixCard__s muted">
+                  スライダーで“やさしさ/カラフルさ”を調整（デモ）。
+                </div>
+                <label class="rng">
+                  <span class="micro muted">SWEETNESS</span>
+                  <input type="range" min="0" max="100" value="74" data-action="loud" />
+                </label>
+                <label class="rng">
+                  <span class="micro muted">SPARKLE</span>
+                  <input type="range" min="0" max="100" value="38" data-action="glitch" />
+                </label>
+                <div class="mixCard__foot">
+                  <button class="btn btn--ghost" type="button" data-action="open-modal" data-modal="kbd">
+                    Ctrl K
+                  </button>
+                  <button class="btn btn--pri" type="button" data-action="toast" data-toast="生成しました（デモ）">
+                    Generate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="mix__right" data-mix-preview>
+              <div class="tile" data-img="m1"></div>
+              <div class="tile" data-img="m2"></div>
+              <div class="tile" data-img="m3"></div>
+              <div class="tile" data-img="m4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ + JOIN -->
+      <section class="sec" id="faq">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">FAQ</div>
+              <h2 class="h2">よくある質問（デモ）</h2>
+            </div>
+            <div class="head__r">
+              <button class="btn btn--ghost" type="button" data-action="open-modal" data-modal="help">FAQを開く</button>
+            </div>
+          </div>
+
+          <div class="bento bento--faq">
+            <details class="acc" open>
+              <summary>ポップにするコツは？</summary>
+              <div class="acc__b">
+                <div class="muted micro">太線 / 丸角 / 影（=ステッカー感）で統一すると一気に“ポップ”になります。</div>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>NOIRÉと何が違う？</summary>
+              <div class="acc__b">
+                <div class="muted micro">黒×ガラス調ではなく、白×紙×ステッカー。構成もBento中心にしています。</div>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>このページは実運用できる？</summary>
+              <div class="acc__b">
+                <div class="muted micro">今はデモ。APIやCMSを足せば実運用に寄せられます。</div>
+              </div>
+            </details>
+          </div>
+
+          <div class="cta">
+            <div>
+              <div class="cta__t">POP PARADE Club（デモ）</div>
+              <div class="cta__s muted">先行案内 / クーポン / 新色</div>
+            </div>
+            <form class="cta__f" data-action="join">
+              <input class="inp" type="email" name="email" placeholder="you@example.com" required />
+              <button class="btn btn--pri" type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot__in">
+        <div class="micro muted">© 2026 POP PARADE. Demo only.</div>
+        <div class="micro muted">Keys: <span class="kbd">Ctrl K</span> Search / <span class="kbd">Esc</span> Close</div>
+      </div>
+    </footer>
+
+    <div class="back" data-back hidden></div>
+
+    <aside class="drawer" data-drawer="menu" hidden aria-label="メニュー">
+      <div class="drawer__h">
+        <div class="drawer__t">Menu</div>
+        <button class="icon icon--mini" type="button" data-action="close-drawer" aria-label="閉じる">✕</button>
+      </div>
+      <div class="drawer__b">
+        <a class="row" href="#top">Top</a>
+        <a class="row" href="#bento">Bento</a>
+        <a class="row" href="#stickers">Stickers</a>
+        <a class="row" href="#play">Play</a>
+        <a class="row" href="#faq">FAQ</a>
+        <div class="line"></div>
+        <button class="row row--btn" type="button" data-action="open-kbd">Search</button>
+        <button class="row row--btn" type="button" data-action="toggle-drawer" data-drawer="cart">Cart</button>
+        <button class="row row--btn" type="button" data-action="toggle-theme">Theme</button>
+      </div>
+    </aside>
+
+    <aside class="drawer drawer--cart" data-drawer="cart" hidden aria-label="カート">
+      <div class="drawer__h">
+        <div class="drawer__t">Cart</div>
+        <button class="icon icon--mini" type="button" data-action="close-drawer" aria-label="閉じる">✕</button>
+      </div>
+      <div class="drawer__b">
+        <div class="cart" data-cart>
+          <div class="item" data-sku="HD-001" data-price="18900">
+            <div class="item__img" data-img="p1"></div>
+            <div class="item__b">
+              <div class="item__t">Hologram Hoodie</div>
+              <div class="row">
+                <div class="micro muted">¥18,900</div>
+                <div class="qty">
+                  <button type="button" class="qty__b" data-action="qty" data-d="--">−</button>
+                  <input class="qty__n" value="1" inputmode="numeric" />
+                  <button type="button" class="qty__b" data-action="qty" data-d="++">＋</button>
+                </div>
+              </div>
+              <button class="link micro" type="button" data-action="rm" data-sku="HD-001">remove</button>
+            </div>
+          </div>
+          <div class="item" data-sku="BG-004" data-price="9600">
+            <div class="item__img" data-img="p3"></div>
+            <div class="item__b">
+              <div class="item__t">PVC Sling Bag</div>
+              <div class="row">
+                <div class="micro muted">¥9,600</div>
+                <div class="qty">
+                  <button type="button" class="qty__b" data-action="qty" data-d="--">−</button>
+                  <input class="qty__n" value="1" inputmode="numeric" />
+                  <button type="button" class="qty__b" data-action="qty" data-d="++">＋</button>
+                </div>
+              </div>
+              <button class="link micro" type="button" data-action="rm" data-sku="BG-004">remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sum">
+          <div class="sum__r"><span class="muted">subtotal</span><span data-sub>¥28,500</span></div>
+          <div class="sum__r"><span class="muted">ship</span><span data-ship>¥0</span></div>
+          <div class="sum__r sum__r--t"><span>total</span><span data-tot>¥28,500</span></div>
+        </div>
+      </div>
+      <div class="drawer__f">
+        <button class="btn btn--ghost" type="button" data-action="close-drawer">Close</button>
+        <button class="btn btn--pri" type="button" data-action="toast" data-toast="Checkout（ダミー）">Checkout</button>
+      </div>
+    </aside>
+
+    <aside class="drawer" data-drawer="filters" hidden aria-label="フィルタ">
+      <div class="drawer__h">
+        <div class="drawer__t">Filters</div>
+        <button class="icon icon--mini" type="button" data-action="close-drawer" aria-label="閉じる">✕</button>
+      </div>
+      <div class="drawer__b">
+        <details class="acc" open>
+          <summary>Color</summary>
+          <div class="acc__b">
+            <label class="ck"><input type="checkbox" checked /> Lime</label>
+            <label class="ck"><input type="checkbox" checked /> Pink</label>
+            <label class="ck"><input type="checkbox" checked /> Cyan</label>
+            <label class="ck"><input type="checkbox" checked /> Black</label>
+          </div>
+        </details>
+        <details class="acc" open>
+          <summary>Price</summary>
+          <div class="acc__b">
+            <label class="micro muted">Max</label>
+            <input class="inp" type="number" value="20000" step="1000" />
+          </div>
+        </details>
+        <details class="acc">
+          <summary>Material</summary>
+          <div class="acc__b">
+            <label class="ck"><input type="checkbox" checked /> PVC</label>
+            <label class="ck"><input type="checkbox" /> Cotton</label>
+            <label class="ck"><input type="checkbox" /> Reflective</label>
+          </div>
+        </details>
+      </div>
+      <div class="drawer__f">
+        <button class="btn btn--ghost" type="button" data-action="close-drawer">Close</button>
+        <button class="btn btn--pri" type="button" data-action="toast" data-toast="適用（デモ）">Apply</button>
+      </div>
+    </aside>
+
+    <dialog class="modal" data-modal="qv">
+      <form method="dialog" class="modal__fr">
+        <div class="modal__h">
+          <div class="modal__t">Quick View</div>
+          <button class="icon icon--mini" value="cancel" aria-label="閉じる">✕</button>
+        </div>
+        <div class="modal__b qv">
+          <div class="qv__img" data-qv-img data-img="p1"></div>
+          <div class="qv__info">
+            <div class="qv__nm" data-qv-name>Hologram Hoodie</div>
+            <div class="qv__pr muted" data-qv-price>¥18,900</div>
+            <p class="muted qv__ds" data-qv-desc>光る、でも軽い。反射で遊ぶフーディ。</p>
+            <div class="qv__row">
+              <div class="micro muted">color</div>
+              <div class="dots">
+                <button class="dotBtn is-on" type="button" style="--c:#b6ff39" aria-label="Lime"></button>
+                <button class="dotBtn" type="button" style="--c:#ff4bd8" aria-label="Pink"></button>
+                <button class="dotBtn" type="button" style="--c:#44d2ff" aria-label="Cyan"></button>
+              </div>
+            </div>
+            <div class="qv__row">
+              <div class="micro muted">size</div>
+              <div class="sizes">
+                <button class="sz is-on" type="button">M</button>
+                <button class="sz" type="button">L</button>
+                <button class="sz" type="button">XL</button>
+              </div>
+            </div>
+            <button class="btn btn--pri btn--block" type="button" data-action="add-qv" data-qv-sku="HD-001">Add</button>
+          </div>
+        </div>
+        <div class="modal__f">
+          <button class="btn btn--ghost" value="cancel">Close</button>
+          <button class="btn btn--pri" value="default">OK</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" data-modal="kbd">
+      <form method="dialog" class="modal__fr">
+        <div class="modal__h">
+          <div class="modal__t">Search</div>
+          <button class="icon icon--mini" value="cancel" aria-label="閉じる">✕</button>
+        </div>
+        <div class="modal__b">
+          <label class="fld">
+            <span class="micro muted">keyword</span>
+            <input class="inp inp--lg" name="q" placeholder="hoodie / pvc / lime..." autocomplete="off" />
+          </label>
+          <div class="sugs">
+            <button class="sug" type="button" data-action="sug" data-q="pvc">pvc</button>
+            <button class="sug" type="button" data-action="sug" data-q="lime">lime</button>
+            <button class="sug" type="button" data-action="sug" data-q="glitch">glitch</button>
+            <button class="sug" type="button" data-action="sug" data-q="hoodie">hoodie</button>
+          </div>
+          <div class="line"></div>
+          <div class="micro muted">Keys: Ctrl K / Esc</div>
+        </div>
+        <div class="modal__f">
+          <button class="btn btn--ghost" value="cancel">Close</button>
+          <button class="btn btn--pri" value="default" data-action="do-search">Search</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" data-modal="help">
+      <form method="dialog" class="modal__fr">
+        <div class="modal__h">
+          <div class="modal__t">FAQ</div>
+          <button class="icon icon--mini" value="cancel" aria-label="閉じる">✕</button>
+        </div>
+        <div class="modal__b rich">
+          <p><strong>デモUI</strong>：ここはFAQの想定。</p>
+          <ul>
+            <li>48hドロップの仕様</li>
+            <li>サイズ感</li>
+            <li>返品</li>
+          </ul>
+        </div>
+        <div class="modal__f">
+          <button class="btn btn--pri" value="default">OK</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" data-modal="try">
+      <form method="dialog" class="modal__fr">
+        <div class="modal__h">
+          <div class="modal__t">Try-on</div>
+          <button class="icon icon--mini" value="cancel" aria-label="閉じる">✕</button>
+        </div>
+        <div class="modal__b rich">
+          <p>デモ：カメラ/AR連携UIが入る想定です。</p>
+        </div>
+        <div class="modal__f">
+          <button class="btn btn--pri" value="default">OK</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" data-modal="video">
+      <form method="dialog" class="modal__fr">
+        <div class="modal__h">
+          <div class="modal__t">Video</div>
+          <button class="icon icon--mini" value="cancel" aria-label="閉じる">✕</button>
+        </div>
+        <div class="modal__b rich">
+          <p>デモ：ここに埋め込み動画が入ります。</p>
+        </div>
+        <div class="modal__f">
+          <button class="btn btn--pri" value="default">OK</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="toasts" aria-live="polite" data-toasts></div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
