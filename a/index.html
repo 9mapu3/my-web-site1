@@ -1,0 +1,1550 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0c10" />
+    <title>NOIRÉ — Fashion Atelier</title>
+    <meta
+      name="description"
+      content="NOIRÉ — 都会的でミニマル、でもエッジィ。ルック、コレクション、エディトリアルを“くどいほど盛り込んだ”ファッションサイトのトップページ。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">本文へスキップ</a>
+
+    <div class="bg">
+      <div class="bg__mesh"></div>
+      <div class="bg__grain" aria-hidden="true"></div>
+    </div>
+
+    <!-- Top announcement -->
+    <div class="topbar" role="status" aria-live="polite">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="chip chip--live">
+            <span class="dot" aria-hidden="true"></span>
+            DROP
+          </span>
+          <span class="topbar__msg"
+            >2026 SS “SILK NOISE” 発売。送料無料は 5/31 まで。</span
+          >
+        </div>
+        <div class="topbar__right">
+          <button class="linklike" data-action="open-size-guide" type="button">
+            サイズガイド
+          </button>
+          <span class="sep" aria-hidden="true">·</span>
+          <button class="linklike" data-action="open-store" type="button">
+            店舗
+          </button>
+          <span class="sep" aria-hidden="true">·</span>
+          <button class="linklike" data-action="open-help" type="button">
+            ヘルプ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" data-elevate-on-scroll>
+      <div class="container header__inner">
+        <button
+          class="iconbtn header__burger"
+          type="button"
+          aria-label="メニューを開く"
+          data-action="toggle-nav"
+          aria-expanded="false"
+          aria-controls="navPanel"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </button>
+
+        <a class="brand" href="#" aria-label="NOIRÉ ホーム">
+          <span class="brand__mark" aria-hidden="true">N</span>
+          <span class="brand__name">NOIRÉ</span>
+          <span class="brand__tag">Fashion Atelier</span>
+        </a>
+
+        <nav class="nav" aria-label="主要">
+          <button
+            class="nav__item"
+            type="button"
+            data-menu="women"
+            aria-expanded="false"
+          >
+            Women
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <button
+            class="nav__item"
+            type="button"
+            data-menu="men"
+            aria-expanded="false"
+          >
+            Men
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <button
+            class="nav__item"
+            type="button"
+            data-menu="editorial"
+            aria-expanded="false"
+          >
+            Editorial
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <a class="nav__link" href="#lookbook">Lookbook</a>
+          <a class="nav__link" href="#newin">New In</a>
+          <a class="nav__link" href="#story">Story</a>
+        </nav>
+
+        <div class="header__actions">
+          <div class="searchpill" role="search">
+            <button class="iconbtn" type="button" data-action="open-search">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M16.3 16.3 21 21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span class="searchpill__label">検索</span>
+              <span class="kbd" aria-hidden="true">Ctrl K</span>
+            </button>
+          </div>
+
+          <button class="iconbtn" type="button" data-action="toggle-theme" aria-label="テーマ切替">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 12.5A8.5 8.5 0 0 1 11.5 3a7 7 0 1 0 9.5 9.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <button class="iconbtn" type="button" data-action="open-wishlist" aria-label="ウィッシュリスト">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 21s-7-4.6-9.3-9C1 8.7 3.4 6 6.4 6c1.8 0 3.3 1 3.9 2 0 0 .9-2 3.7-2 2.9 0 5 2.6 4.8 6-.3 4.8-9 9-9 9Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="badge" data-wishlist-count>2</span>
+          </button>
+
+          <button
+            class="iconbtn"
+            type="button"
+            data-action="open-cart"
+            aria-label="カート"
+          >
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M7 7h14l-2 8H8L7 7Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 7 6 3H3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M9.5 20.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM17.5 20.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+            <span class="badge" data-cart-count>3</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mega menus -->
+      <div class="megamenu" data-mega-root>
+        <div class="container megamenu__inner">
+          <section class="mega" data-mega="women" aria-label="Women メニュー">
+            <div class="mega__col">
+              <h3 class="mega__title">New</h3>
+              <a class="mega__link" href="#newin">New In</a>
+              <a class="mega__link" href="#newin">Drop: Silk Noise</a>
+              <a class="mega__link" href="#newin">Pre-order</a>
+              <a class="mega__link" href="#newin">Gift Edit</a>
+            </div>
+            <div class="mega__col">
+              <h3 class="mega__title">Categories</h3>
+              <a class="mega__link" href="#newin">Outer</a>
+              <a class="mega__link" href="#newin">Tops</a>
+              <a class="mega__link" href="#newin">Bottoms</a>
+              <a class="mega__link" href="#newin">Dresses</a>
+              <a class="mega__link" href="#newin">Accessories</a>
+            </div>
+            <div class="mega__col mega__col--cards">
+              <div class="miniCard">
+                <div class="miniCard__img" data-img="neon"></div>
+                <div class="miniCard__body">
+                  <div class="miniCard__kicker">Editor’s Pick</div>
+                  <div class="miniCard__title">Sheer Layering</div>
+                  <div class="miniCard__meta">軽さ × 黒の奥行き</div>
+                  <button class="btn btn--sm btn--ghost" type="button" data-action="toast" data-toast="“Sheer” を開きました">
+                    See edit
+                  </button>
+                </div>
+              </div>
+              <div class="miniCard">
+                <div class="miniCard__img" data-img="sand"></div>
+                <div class="miniCard__body">
+                  <div class="miniCard__kicker">New Color</div>
+                  <div class="miniCard__title">Ash Beige</div>
+                  <div class="miniCard__meta">肌に溶けるニュートラル</div>
+                  <button class="btn btn--sm btn--ghost" type="button" data-action="toast" data-toast="“Ash Beige” を開きました">
+                    Explore
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mega" data-mega="men" aria-label="Men メニュー">
+            <div class="mega__col">
+              <h3 class="mega__title">New</h3>
+              <a class="mega__link" href="#newin">New In</a>
+              <a class="mega__link" href="#newin">Tailored</a>
+              <a class="mega__link" href="#newin">Everyday Tech</a>
+              <a class="mega__link" href="#newin">Limited</a>
+            </div>
+            <div class="mega__col">
+              <h3 class="mega__title">Categories</h3>
+              <a class="mega__link" href="#newin">Jackets</a>
+              <a class="mega__link" href="#newin">Shirts</a>
+              <a class="mega__link" href="#newin">Pants</a>
+              <a class="mega__link" href="#newin">Shoes</a>
+              <a class="mega__link" href="#newin">Bags</a>
+            </div>
+            <div class="mega__col mega__col--cards">
+              <div class="miniCard miniCard--wide">
+                <div class="miniCard__img" data-img="mono"></div>
+                <div class="miniCard__body">
+                  <div class="miniCard__kicker">Drop</div>
+                  <div class="miniCard__title">Black on Black</div>
+                  <div class="miniCard__meta">光沢の差で魅せる</div>
+                  <button class="btn btn--sm btn--ghost" type="button" data-action="toast" data-toast="“Black on Black” を開きました">
+                    View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mega" data-mega="editorial" aria-label="Editorial メニュー">
+            <div class="mega__col">
+              <h3 class="mega__title">Read</h3>
+              <a class="mega__link" href="#editorial">Journal</a>
+              <a class="mega__link" href="#editorial">Care</a>
+              <a class="mega__link" href="#editorial">Materials</a>
+              <a class="mega__link" href="#editorial">Studio</a>
+            </div>
+            <div class="mega__col">
+              <h3 class="mega__title">Topics</h3>
+              <a class="mega__link" href="#editorial">Quiet Luxury</a>
+              <a class="mega__link" href="#editorial">City Uniform</a>
+              <a class="mega__link" href="#editorial">Silhouette</a>
+              <a class="mega__link" href="#editorial">Sustainability</a>
+            </div>
+            <div class="mega__col mega__col--cards">
+              <div class="quoteCard">
+                <div class="quoteCard__icon" aria-hidden="true">“</div>
+                <div class="quoteCard__text">
+                  服は、音のない自己紹介。素材と余白で語る。
+                </div>
+                <div class="quoteCard__by">— NOIRÉ Studio</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile nav panel -->
+    <aside class="sidepanel" id="navPanel" aria-label="モバイルメニュー" hidden>
+      <div class="sidepanel__head">
+        <div class="sidepanel__title">Menu</div>
+        <button class="iconbtn" type="button" data-action="toggle-nav" aria-label="閉じる">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 6l12 12M18 6 6 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="sidepanel__body">
+        <div class="stack">
+          <a class="rowlink" href="#newin">New In</a>
+          <a class="rowlink" href="#lookbook">Lookbook</a>
+          <a class="rowlink" href="#editorial">Editorial</a>
+          <a class="rowlink" href="#story">Story</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stack">
+          <button class="rowbtn" type="button" data-action="open-search">
+            検索
+            <span class="muted">— すべてのコレクション</span>
+          </button>
+          <button class="rowbtn" type="button" data-action="open-cart">
+            カート
+            <span class="pill" data-cart-count-pill>3</span>
+          </button>
+          <button class="rowbtn" type="button" data-action="open-wishlist">
+            ウィッシュリスト
+            <span class="pill" data-wishlist-count-pill>2</span>
+          </button>
+        </div>
+
+        <div class="divider"></div>
+
+        <details class="accordion" open>
+          <summary>Women</summary>
+          <div class="accordion__body">
+            <a class="miniLink" href="#newin">Outer</a>
+            <a class="miniLink" href="#newin">Tops</a>
+            <a class="miniLink" href="#newin">Bottoms</a>
+            <a class="miniLink" href="#newin">Accessories</a>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary>Men</summary>
+          <div class="accordion__body">
+            <a class="miniLink" href="#newin">Jackets</a>
+            <a class="miniLink" href="#newin">Shirts</a>
+            <a class="miniLink" href="#newin">Pants</a>
+            <a class="miniLink" href="#newin">Bags</a>
+          </div>
+        </details>
+      </div>
+      <div class="sidepanel__foot">
+        <div class="micro">
+          <span class="chip chip--soft">JP</span>
+          <span class="chip chip--soft">JPY</span>
+          <span class="chip chip--soft">Free returns 14 days</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="hero__eyebrow">
+              <span class="chip chip--glow">2026 SS</span>
+              <span class="chip chip--soft">Limited drop</span>
+              <span class="chip chip--soft">Made in Tokyo</span>
+            </div>
+            <h1 class="hero__title">
+              静けさを、<span class="grad">着る。</span>
+            </h1>
+            <p class="hero__lead">
+              シルクの揺れ、マットな黒、わずかな光沢。余白に宿る“質感”を編集した
+              NOIRÉ の新章。
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#newin">新作を見る</a>
+              <button class="btn btn--ghost" type="button" data-action="open-tryon">
+                バーチャル試着
+              </button>
+              <button class="btn btn--ghost" type="button" data-action="open-video">
+                30秒ムービー
+              </button>
+            </div>
+
+            <div class="hero__meta">
+              <div class="metaCard">
+                <div class="metaCard__k">発送</div>
+                <div class="metaCard__v">24h以内</div>
+                <div class="metaCard__s">即日発送対象あり</div>
+              </div>
+              <div class="metaCard">
+                <div class="metaCard__k">素材</div>
+                <div class="metaCard__v">天然×機能</div>
+                <div class="metaCard__s">ケアが簡単</div>
+              </div>
+              <div class="metaCard">
+                <div class="metaCard__k">返品</div>
+                <div class="metaCard__v">14日</div>
+                <div class="metaCard__s">無料引取</div>
+              </div>
+            </div>
+
+            <div class="hero__marquee" aria-label="キーワード">
+              <div class="marquee">
+                <div class="marquee__track">
+                  <span>Quiet luxury</span>
+                  <span>Sheer</span>
+                  <span>Tailored</span>
+                  <span>Monochrome</span>
+                  <span>Texture</span>
+                  <span>Studio</span>
+                  <span>City uniform</span>
+                  <span>Quiet luxury</span>
+                  <span>Sheer</span>
+                  <span>Tailored</span>
+                  <span>Monochrome</span>
+                  <span>Texture</span>
+                  <span>Studio</span>
+                  <span>City uniform</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="frame">
+              <div class="frame__img" data-img="hero"></div>
+              <div class="frame__overlay"></div>
+              <div class="frame__ui">
+                <div class="floating floating--top">
+                  <div class="stat">
+                    <div class="stat__num">4.8</div>
+                    <div class="stat__lab">Review</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat__num">12k</div>
+                    <div class="stat__lab">Members</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat__num">02</div>
+                    <div class="stat__lab">Drop</div>
+                  </div>
+                </div>
+                <div class="floating floating--bottom">
+                  <div class="pill pill--glass">
+                    <span class="pill__dot" aria-hidden="true"></span>
+                    在庫: 残りわずか
+                  </div>
+                  <button class="pill pill--glass" type="button" data-action="toast" data-toast="通知をONにしました">
+                    再入荷通知
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__stack">
+              <div class="peek">
+                <div class="peek__img" data-img="peek1"></div>
+                <div class="peek__txt">
+                  <div class="peek__t">Satin Shell Jacket</div>
+                  <div class="peek__m">¥39,800</div>
+                </div>
+                <button class="iconbtn iconbtn--xs" type="button" data-action="quick-add" data-sku="JKT-002">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div class="peek">
+                <div class="peek__img" data-img="peek2"></div>
+                <div class="peek__txt">
+                  <div class="peek__t">Sheer Long Tee</div>
+                  <div class="peek__m">¥12,400</div>
+                </div>
+                <button class="iconbtn iconbtn--xs" type="button" data-action="quick-add" data-sku="TEE-011">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / feature strip -->
+      <section class="strip">
+        <div class="container strip__grid">
+          <div class="strip__item">
+            <div class="strip__icon" aria-hidden="true">✦</div>
+            <div class="strip__text">
+              <div class="strip__t">会員限定</div>
+              <div class="strip__s">先行ドロップ & プライベートセール</div>
+            </div>
+          </div>
+          <div class="strip__item">
+            <div class="strip__icon" aria-hidden="true">⟡</div>
+            <div class="strip__text">
+              <div class="strip__t">ギフト</div>
+              <div class="strip__s">ミニマル梱包・メッセージ同梱</div>
+            </div>
+          </div>
+          <div class="strip__item">
+            <div class="strip__icon" aria-hidden="true">⌁</div>
+            <div class="strip__text">
+              <div class="strip__t">試着</div>
+              <div class="strip__s">サイズ診断 & コーデ提案</div>
+            </div>
+          </div>
+          <div class="strip__item">
+            <div class="strip__icon" aria-hidden="true">⧉</div>
+            <div class="strip__text">
+              <div class="strip__t">サステナ</div>
+              <div class="strip__s">追跡可能な素材・透明性</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New In / Shop -->
+      <section class="section" id="newin">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <div class="kicker">New In</div>
+              <h2 class="h2">本日の編集部セレクト</h2>
+            </div>
+            <div class="section__actions">
+              <div class="seg" role="tablist" aria-label="表示切替">
+                <button class="seg__btn is-active" type="button" data-action="view" data-view="grid" role="tab" aria-selected="true">
+                  グリッド
+                </button>
+                <button class="seg__btn" type="button" data-action="view" data-view="wide" role="tab" aria-selected="false">
+                  ワイド
+                </button>
+                <button class="seg__btn" type="button" data-action="view" data-view="compact" role="tab" aria-selected="false">
+                  コンパクト
+                </button>
+              </div>
+              <button class="btn btn--ghost" type="button" data-action="open-filters">
+                フィルタ
+              </button>
+            </div>
+          </div>
+
+          <div class="filtersbar" aria-label="アクティブフィルタ">
+            <button class="tag tag--active" type="button" data-action="toggle-tag" data-tag="new">
+              New
+              <span class="x" aria-hidden="true"></span>
+            </button>
+            <button class="tag" type="button" data-action="toggle-tag" data-tag="black">
+              Black
+            </button>
+            <button class="tag" type="button" data-action="toggle-tag" data-tag="sheer">
+              Sheer
+            </button>
+            <button class="tag" type="button" data-action="toggle-tag" data-tag="tailored">
+              Tailored
+            </button>
+            <button class="tag" type="button" data-action="toggle-tag" data-tag="accessory">
+              Accessory
+            </button>
+            <div class="spacer"></div>
+            <div class="sort">
+              <label class="sort__label" for="sortSelect">並び替え</label>
+              <select id="sortSelect" class="select" data-action="sort">
+                <option value="featured">おすすめ</option>
+                <option value="new">新着</option>
+                <option value="priceAsc">価格: 安い順</option>
+                <option value="priceDesc">価格: 高い順</option>
+                <option value="rating">評価</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products" data-products-view="grid" aria-live="polite">
+            <!-- Product cards -->
+            <article class="pCard" data-tags="new black tailored" data-price="39800" data-rating="4.7">
+              <div class="pCard__media">
+                <div class="pCard__img" data-img="p1"></div>
+                <div class="pCard__badges">
+                  <span class="chip chip--glow">NEW</span>
+                  <span class="chip chip--soft">Limited</span>
+                </div>
+                <div class="pCard__actions">
+                  <button class="iconbtn" type="button" data-action="wishlist" aria-label="ウィッシュリストに追加">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21s-7-4.6-9.3-9C1 8.7 3.4 6 6.4 6c1.8 0 3.3 1 3.9 2 0 0 .9-2 3.7-2 2.9 0 5 2.6 4.8 6-.3 4.8-9 9-9 9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button class="iconbtn" type="button" data-action="quickview" aria-label="クイックビュー">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="pCard__body">
+                <div class="pCard__top">
+                  <div class="pCard__name">Satin Shell Jacket</div>
+                  <div class="pCard__price">¥39,800</div>
+                </div>
+                <div class="pCard__meta">
+                  <span class="swatches" aria-label="カラーバリエーション">
+                    <span class="swatch" style="--c:#0b0c10"></span>
+                    <span class="swatch" style="--c:#5a5f6a"></span>
+                    <span class="swatch" style="--c:#c8b8a6"></span>
+                  </span>
+                  <span class="rating" aria-label="評価 4.7">
+                    <span class="stars" style="--r:4.7"></span>
+                    <span class="rating__num">4.7</span>
+                  </span>
+                </div>
+                <div class="pCard__desc">
+                  光沢の差で奥行きを作る、軽量シェル。
+                </div>
+                <div class="pCard__foot">
+                  <button class="btn btn--primary btn--block" type="button" data-action="add" data-sku="JKT-002">
+                    カートに入れる
+                  </button>
+                  <button class="btn btn--ghost" type="button" data-action="open-size">
+                    サイズ
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="pCard" data-tags="new black sheer" data-price="12400" data-rating="4.9">
+              <div class="pCard__media">
+                <div class="pCard__img" data-img="p2"></div>
+                <div class="pCard__badges">
+                  <span class="chip chip--glow">HOT</span>
+                </div>
+                <div class="pCard__actions">
+                  <button class="iconbtn" type="button" data-action="wishlist" aria-label="ウィッシュリストに追加">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21s-7-4.6-9.3-9C1 8.7 3.4 6 6.4 6c1.8 0 3.3 1 3.9 2 0 0 .9-2 3.7-2 2.9 0 5 2.6 4.8 6-.3 4.8-9 9-9 9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button class="iconbtn" type="button" data-action="quickview" aria-label="クイックビュー">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="pCard__body">
+                <div class="pCard__top">
+                  <div class="pCard__name">Sheer Long Tee</div>
+                  <div class="pCard__price">¥12,400</div>
+                </div>
+                <div class="pCard__meta">
+                  <span class="swatches" aria-label="カラーバリエーション">
+                    <span class="swatch" style="--c:#0b0c10"></span>
+                    <span class="swatch" style="--c:#9aa1ac"></span>
+                  </span>
+                  <span class="rating" aria-label="評価 4.9">
+                    <span class="stars" style="--r:4.9"></span>
+                    <span class="rating__num">4.9</span>
+                  </span>
+                </div>
+                <div class="pCard__desc">
+                  透け感で“黒”を軽くする。レイヤリング用。
+                </div>
+                <div class="pCard__foot">
+                  <button class="btn btn--primary btn--block" type="button" data-action="add" data-sku="TEE-011">
+                    カートに入れる
+                  </button>
+                  <button class="btn btn--ghost" type="button" data-action="open-size">
+                    サイズ
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="pCard" data-tags="black accessory" data-price="16800" data-rating="4.6">
+              <div class="pCard__media">
+                <div class="pCard__img" data-img="p3"></div>
+                <div class="pCard__badges">
+                  <span class="chip chip--soft">Restock</span>
+                </div>
+                <div class="pCard__actions">
+                  <button class="iconbtn" type="button" data-action="wishlist" aria-label="ウィッシュリストに追加">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21s-7-4.6-9.3-9C1 8.7 3.4 6 6.4 6c1.8 0 3.3 1 3.9 2 0 0 .9-2 3.7-2 2.9 0 5 2.6 4.8 6-.3 4.8-9 9-9 9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button class="iconbtn" type="button" data-action="quickview" aria-label="クイックビュー">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="pCard__body">
+                <div class="pCard__top">
+                  <div class="pCard__name">Orbit Mini Bag</div>
+                  <div class="pCard__price">¥16,800</div>
+                </div>
+                <div class="pCard__meta">
+                  <span class="swatches" aria-label="カラーバリエーション">
+                    <span class="swatch" style="--c:#0b0c10"></span>
+                    <span class="swatch" style="--c:#2b2f38"></span>
+                  </span>
+                  <span class="rating" aria-label="評価 4.6">
+                    <span class="stars" style="--r:4.6"></span>
+                    <span class="rating__num">4.6</span>
+                  </span>
+                </div>
+                <div class="pCard__desc">
+                  立体感のある曲線、必要なものだけを美しく。
+                </div>
+                <div class="pCard__foot">
+                  <button class="btn btn--primary btn--block" type="button" data-action="add" data-sku="BAG-014">
+                    カートに入れる
+                  </button>
+                  <button class="btn btn--ghost" type="button" data-action="open-size">
+                    サイズ
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="pCard" data-tags="tailored new" data-price="22800" data-rating="4.4">
+              <div class="pCard__media">
+                <div class="pCard__img" data-img="p4"></div>
+                <div class="pCard__badges">
+                  <span class="chip chip--soft">Pre-order</span>
+                </div>
+                <div class="pCard__actions">
+                  <button class="iconbtn" type="button" data-action="wishlist" aria-label="ウィッシュリストに追加">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21s-7-4.6-9.3-9C1 8.7 3.4 6 6.4 6c1.8 0 3.3 1 3.9 2 0 0 .9-2 3.7-2 2.9 0 5 2.6 4.8 6-.3 4.8-9 9-9 9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button class="iconbtn" type="button" data-action="quickview" aria-label="クイックビュー">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="pCard__body">
+                <div class="pCard__top">
+                  <div class="pCard__name">Tailored Wide Slacks</div>
+                  <div class="pCard__price">¥22,800</div>
+                </div>
+                <div class="pCard__meta">
+                  <span class="swatches" aria-label="カラーバリエーション">
+                    <span class="swatch" style="--c:#111318"></span>
+                    <span class="swatch" style="--c:#6d7078"></span>
+                  </span>
+                  <span class="rating" aria-label="評価 4.4">
+                    <span class="stars" style="--r:4.4"></span>
+                    <span class="rating__num">4.4</span>
+                  </span>
+                </div>
+                <div class="pCard__desc">
+                  落ち感で“線”を作る。毎日の制服に。
+                </div>
+                <div class="pCard__foot">
+                  <button class="btn btn--primary btn--block" type="button" data-action="add" data-sku="PNT-007">
+                    カートに入れる
+                  </button>
+                  <button class="btn btn--ghost" type="button" data-action="open-size">
+                    サイズ
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="ctaRow">
+            <div class="ctaRow__left">
+              <div class="subtle">あなたの好みに合わせて編集します</div>
+              <div class="ctaRow__title">パーソナル診断（1分）</div>
+            </div>
+            <div class="ctaRow__right">
+              <button class="btn btn--ghost" type="button" data-action="open-quiz">
+                診断を開始
+              </button>
+              <a class="btn btn--primary" href="#editorial">スタイル提案を見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lookbook -->
+      <section class="section section--alt" id="lookbook">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <div class="kicker">Lookbook</div>
+              <h2 class="h2">“黒”のレイヤー、質感の差</h2>
+            </div>
+            <div class="section__actions">
+              <div class="pillset" aria-label="フィルタ">
+                <button class="pill pill--glass is-active" type="button" data-action="lb-filter" data-filter="all">All</button>
+                <button class="pill pill--glass" type="button" data-action="lb-filter" data-filter="day">Day</button>
+                <button class="pill pill--glass" type="button" data-action="lb-filter" data-filter="night">Night</button>
+                <button class="pill pill--glass" type="button" data-action="lb-filter" data-filter="studio">Studio</button>
+              </div>
+              <button class="btn btn--ghost" type="button" data-action="lb-shuffle">
+                シャッフル
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery" data-gallery>
+            <figure class="shot" data-lb="day">
+              <div class="shot__img" data-img="g1"></div>
+              <figcaption class="shot__cap">
+                <div class="shot__t">Matte Coat × Sheer</div>
+                <div class="shot__s">昼の光で“黒”を薄くする</div>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-lb="night">
+              <div class="shot__img" data-img="g2"></div>
+              <figcaption class="shot__cap">
+                <div class="shot__t">Satin Jacket × Boots</div>
+                <div class="shot__s">夜の反射で輪郭を立てる</div>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-lb="studio">
+              <div class="shot__img" data-img="g3"></div>
+              <figcaption class="shot__cap">
+                <div class="shot__t">Tailored × Wide</div>
+                <div class="shot__s">線で魅せる、静かな主張</div>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-lb="day">
+              <div class="shot__img" data-img="g4"></div>
+              <figcaption class="shot__cap">
+                <div class="shot__t">Monochrome Layers</div>
+                <div class="shot__s">グレーの挿し色で柔らかく</div>
+              </figcaption>
+            </figure>
+            <figure class="shot" data-lb="night">
+              <div class="shot__img" data-img="g5"></div>
+              <figcaption class="shot__cap">
+                <div class="shot__t">Sharp Silhouette</div>
+                <div class="shot__s">影をデザインする</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial -->
+      <section class="section" id="editorial">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <div class="kicker">Editorial</div>
+              <h2 class="h2">Journal / Studio Notes</h2>
+            </div>
+            <div class="section__actions">
+              <button class="btn btn--ghost" type="button" data-action="toast" data-toast="記事一覧へ（ダミー）">
+                すべて読む
+              </button>
+            </div>
+          </div>
+
+          <div class="edGrid">
+            <article class="edCard">
+              <div class="edCard__img" data-img="e1"></div>
+              <div class="edCard__body">
+                <div class="metaLine">
+                  <span class="chip chip--soft">Materials</span>
+                  <span class="muted">5 min</span>
+                </div>
+                <div class="edCard__t">“Sheer” は、涼しさではなく余白。</div>
+                <div class="edCard__s">透け感を上品に使うための、色と層の設計。</div>
+                <div class="edCard__foot">
+                  <button class="btn btn--sm btn--ghost" type="button" data-action="toast" data-toast="記事を開きました（ダミー）">Read</button>
+                  <span class="muted">2026.05</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="edCard">
+              <div class="edCard__img" data-img="e2"></div>
+              <div class="edCard__body">
+                <div class="metaLine">
+                  <span class="chip chip--soft">Care</span>
+                  <span class="muted">3 min</span>
+                </div>
+                <div class="edCard__t">黒を長く保つ、洗いと乾燥のコツ。</div>
+                <div class="edCard__s">色落ちを最小に、繊維を守るルーティン。</div>
+                <div class="edCard__foot">
+                  <button class="btn btn--sm btn--ghost" type="button" data-action="toast" data-toast="記事を開きました（ダミー）">Read</button>
+                  <span class="muted">2026.04</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="edCard edCard--wide">
+              <div class="edCard__img" data-img="e3"></div>
+              <div class="edCard__body">
+                <div class="metaLine">
+                  <span class="chip chip--glow">Studio</span>
+                  <span class="muted">8 min</span>
+                </div>
+                <div class="edCard__t">静かなラグジュアリーの、コスト設計。</div>
+                <div class="edCard__s">
+                  高い理由ではなく、長く着られる理由を分解する。
+                </div>
+                <div class="edCard__foot">
+                  <button class="btn btn--sm btn--primary" type="button" data-action="toast" data-toast="記事を開きました（ダミー）">
+                    Read feature
+                  </button>
+                  <span class="muted">2026.03</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Story -->
+      <section class="section section--alt" id="story">
+        <div class="container">
+          <div class="story">
+            <div class="story__left">
+              <div class="kicker">Brand Story</div>
+              <h2 class="h2">余白と質感の、アトリエ。</h2>
+              <p class="p">
+                NOIRÉ は「黒」を中心に、素材の差・光の差・体の動きの差で、
+                シルエットを設計します。派手に見せないための、工夫を派手に。
+              </p>
+
+              <div class="steps">
+                <div class="step">
+                  <div class="step__n">01</div>
+                  <div class="step__b">
+                    <div class="step__t">Design</div>
+                    <div class="step__s">線と余白をミリ単位で調整</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step__n">02</div>
+                  <div class="step__b">
+                    <div class="step__t">Material</div>
+                    <div class="step__s">透け・反射・落ち感で構成</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step__n">03</div>
+                  <div class="step__b">
+                    <div class="step__t">Craft</div>
+                    <div class="step__s">東京の小規模工房で少量生産</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="story__cta">
+                <button class="btn btn--primary" type="button" data-action="open-store">
+                  アトリエを探す
+                </button>
+                <button class="btn btn--ghost" type="button" data-action="toast" data-toast="採用ページ（ダミー）">
+                  採用
+                </button>
+              </div>
+            </div>
+
+            <div class="story__right">
+              <div class="stackCards">
+                <div class="sCard">
+                  <div class="sCard__k">Transparency</div>
+                  <div class="sCard__t">素材の由来を追跡</div>
+                  <div class="sCard__s">サプライチェーンを可視化</div>
+                  <div class="progress">
+                    <div class="progress__bar" style="--p: 72%"></div>
+                  </div>
+                  <div class="micro muted">追跡可能率 72%</div>
+                </div>
+                <div class="sCard">
+                  <div class="sCard__k">Fit</div>
+                  <div class="sCard__t">サイズ診断</div>
+                  <div class="sCard__s">体型と好みで提案</div>
+                  <div class="range">
+                    <input class="range__input" type="range" min="0" max="100" value="64" data-action="range" />
+                    <div class="range__labels">
+                      <span>Regular</span><span>Relax</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sCard sCard--img">
+                  <div class="sCard__img" data-img="atelier"></div>
+                  <div class="sCard__overlay">
+                    <div class="sCard__t">Studio Tour</div>
+                    <button class="btn btn--sm btn--ghost" type="button" data-action="open-video">
+                      Play
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <div class="kicker">Community</div>
+              <h2 class="h2">レビュー & スナップ</h2>
+            </div>
+            <div class="section__actions">
+              <button class="btn btn--ghost" type="button" data-action="reviews-prev" aria-label="前へ">
+                ←
+              </button>
+              <button class="btn btn--ghost" type="button" data-action="reviews-next" aria-label="次へ">
+                →
+              </button>
+            </div>
+          </div>
+
+          <div class="reviews" data-reviews>
+            <article class="rCard">
+              <div class="rCard__top">
+                <div class="avatar" aria-hidden="true">A</div>
+                <div>
+                  <div class="rCard__name">Airi</div>
+                  <div class="muted">身長 164 / M</div>
+                </div>
+                <div class="spacer"></div>
+                <span class="chip chip--soft">Verified</span>
+              </div>
+              <div class="rCard__stars" aria-label="評価 5">
+                <span class="stars" style="--r: 5"></span>
+              </div>
+              <div class="rCard__txt">
+                “透ける黒”が上品。インナーの色で印象が変わるのが楽しい。
+              </div>
+              <div class="rCard__imgs">
+                <div class="thumb" data-img="snap1"></div>
+                <div class="thumb" data-img="snap2"></div>
+              </div>
+              <div class="rCard__foot">
+                <button class="linklike" type="button" data-action="toast" data-toast="役に立った！">役に立った</button>
+                <span class="sep" aria-hidden="true">·</span>
+                <button class="linklike" type="button" data-action="toast" data-toast="返信しました（ダミー）">返信</button>
+              </div>
+            </article>
+
+            <article class="rCard">
+              <div class="rCard__top">
+                <div class="avatar" aria-hidden="true">K</div>
+                <div>
+                  <div class="rCard__name">Ken</div>
+                  <div class="muted">身長 178 / L</div>
+                </div>
+                <div class="spacer"></div>
+                <span class="chip chip--soft">New</span>
+              </div>
+              <div class="rCard__stars" aria-label="評価 4">
+                <span class="stars" style="--r: 4.2"></span>
+              </div>
+              <div class="rCard__txt">
+                スラックスの落ち感が良い。ジャケットと合わせると“制服感”が出る。
+              </div>
+              <div class="rCard__imgs">
+                <div class="thumb" data-img="snap3"></div>
+                <div class="thumb" data-img="snap4"></div>
+              </div>
+              <div class="rCard__foot">
+                <button class="linklike" type="button" data-action="toast" data-toast="役に立った！">役に立った</button>
+                <span class="sep" aria-hidden="true">·</span>
+                <button class="linklike" type="button" data-action="toast" data-toast="返信しました（ダミー）">返信</button>
+              </div>
+            </article>
+
+            <article class="rCard">
+              <div class="rCard__top">
+                <div class="avatar" aria-hidden="true">M</div>
+                <div>
+                  <div class="rCard__name">Mina</div>
+                  <div class="muted">身長 156 / S</div>
+                </div>
+                <div class="spacer"></div>
+                <span class="chip chip--soft">Top</span>
+              </div>
+              <div class="rCard__stars" aria-label="評価 5">
+                <span class="stars" style="--r: 4.9"></span>
+              </div>
+              <div class="rCard__txt">
+                ミニバッグが軽いのに形が崩れない。どんな服にも合う。
+              </div>
+              <div class="rCard__imgs">
+                <div class="thumb" data-img="snap5"></div>
+                <div class="thumb" data-img="snap6"></div>
+              </div>
+              <div class="rCard__foot">
+                <button class="linklike" type="button" data-action="toast" data-toast="役に立った！">役に立った</button>
+                <span class="sep" aria-hidden="true">·</span>
+                <button class="linklike" type="button" data-action="toast" data-toast="返信しました（ダミー）">返信</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="newsletter">
+            <div class="newsletter__left">
+              <div class="kicker">Members</div>
+              <h2 class="h2">先に、静けさを受け取る。</h2>
+              <p class="p muted">
+                新作の先行案内、限定ドロップ、スタイル提案を配信。スパムはしません（本当）。
+              </p>
+              <div class="micro">
+                <span class="chip chip--soft">先行購入</span>
+                <span class="chip chip--soft">ポイント</span>
+                <span class="chip chip--soft">限定カラー</span>
+              </div>
+            </div>
+            <div class="newsletter__right">
+              <form class="form" data-action="newsletter">
+                <label class="field">
+                  <span class="field__label">メールアドレス</span>
+                  <input class="input" name="email" type="email" placeholder="you@example.com" required />
+                </label>
+                <label class="field">
+                  <span class="field__label">好み</span>
+                  <div class="chips">
+                    <label class="chipbox"><input type="checkbox" name="pref" value="women" checked />Women</label>
+                    <label class="chipbox"><input type="checkbox" name="pref" value="men" />Men</label>
+                    <label class="chipbox"><input type="checkbox" name="pref" value="editorial" checked />Editorial</label>
+                  </div>
+                </label>
+                <button class="btn btn--primary btn--block" type="submit">
+                  登録する
+                </button>
+                <div class="micro muted">
+                  登録で <span class="chip chip--soft">10% OFF</span> クーポン（デモ）
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true">N</span>
+            <span class="brand__name">NOIRÉ</span>
+          </div>
+          <p class="muted">
+            ミニマルで、やや過剰。<br />
+            “くどいほどUIを盛り込んだ”デモホームページ。
+          </p>
+          <div class="social">
+            <button class="iconbtn" type="button" data-action="toast" data-toast="Instagram（ダミー）" aria-label="Instagram">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="2" />
+                  <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2" />
+                  <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+            <button class="iconbtn" type="button" data-action="toast" data-toast="X（ダミー）" aria-label="X">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+            <button class="iconbtn" type="button" data-action="toast" data-toast="YouTube（ダミー）" aria-label="YouTube">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M22 12s0-4-1-6-3-2-9-2-8 1-9 2-1 6-1 6 0 4 1 6 3 2 9 2 8-1 9-2 1-6 1-6Z" stroke="currentColor" stroke-width="2" />
+                  <path d="M10 9v6l6-3-6-3Z" fill="currentColor" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__cols">
+          <div class="fcol">
+            <div class="fcol__t">Shop</div>
+            <a class="fcol__a" href="#newin">New In</a>
+            <a class="fcol__a" href="#newin">Best Sellers</a>
+            <a class="fcol__a" href="#lookbook">Lookbook</a>
+            <a class="fcol__a" href="#editorial">Editorial</a>
+          </div>
+          <div class="fcol">
+            <div class="fcol__t">Support</div>
+            <button class="fcol__btn" type="button" data-action="open-help">Help</button>
+            <button class="fcol__btn" type="button" data-action="open-size-guide">Size guide</button>
+            <button class="fcol__btn" type="button" data-action="open-store">Stores</button>
+            <button class="fcol__btn" type="button" data-action="toast" data-toast="配送ポリシー（ダミー）">Shipping</button>
+          </div>
+          <div class="fcol">
+            <div class="fcol__t">Company</div>
+            <button class="fcol__btn" type="button" data-action="toast" data-toast="About（ダミー）">About</button>
+            <button class="fcol__btn" type="button" data-action="toast" data-toast="Sustainability（ダミー）">Sustainability</button>
+            <button class="fcol__btn" type="button" data-action="toast" data-toast="Press（ダミー）">Press</button>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <div class="micro muted">© 2026 NOIRÉ. Demo UI only.</div>
+        <div class="micro muted">Keyboard: <span class="kbd">Ctrl K</span> Search / <span class="kbd">Esc</span> Close</div>
+      </div>
+    </footer>
+
+    <!-- Overlays -->
+    <div class="backdrop" data-backdrop hidden></div>
+
+    <!-- Search modal -->
+    <dialog class="modal" data-modal="search">
+      <form method="dialog" class="modal__frame">
+        <div class="modal__head">
+          <div class="modal__title">検索</div>
+          <button class="iconbtn" value="cancel" aria-label="閉じる">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="modal__body">
+          <label class="field">
+            <span class="field__label">キーワード</span>
+            <input class="input input--lg" name="q" placeholder="例: sheer / jacket / black" autocomplete="off" />
+          </label>
+          <div class="suggest">
+            <button type="button" class="suggest__item" data-action="search-suggest" data-q="sheer">sheer</button>
+            <button type="button" class="suggest__item" data-action="search-suggest" data-q="tailored">tailored</button>
+            <button type="button" class="suggest__item" data-action="search-suggest" data-q="bag">bag</button>
+            <button type="button" class="suggest__item" data-action="search-suggest" data-q="black">black</button>
+          </div>
+          <div class="divider"></div>
+          <div class="micro muted">デモ: 検索結果はトースト表示のみ。</div>
+        </div>
+        <div class="modal__foot">
+          <button class="btn btn--ghost" value="cancel">閉じる</button>
+          <button class="btn btn--primary" value="default" data-action="search-submit">検索</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Filters drawer -->
+    <aside class="drawer" data-drawer="filters" hidden aria-label="フィルタ">
+      <div class="drawer__head">
+        <div class="drawer__title">フィルタ</div>
+        <button class="iconbtn" type="button" data-action="close-drawer" aria-label="閉じる">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="drawer__body">
+        <details class="accordion" open>
+          <summary>カラー</summary>
+          <div class="accordion__body">
+            <div class="grid2">
+              <label class="check"><input type="checkbox" checked /> Black</label>
+              <label class="check"><input type="checkbox" /> Ash</label>
+              <label class="check"><input type="checkbox" /> Sand</label>
+              <label class="check"><input type="checkbox" /> Mono</label>
+            </div>
+          </div>
+        </details>
+        <details class="accordion" open>
+          <summary>価格</summary>
+          <div class="accordion__body">
+            <label class="field">
+              <span class="field__label">上限（円）</span>
+              <input class="input" type="number" value="50000" min="0" step="1000" />
+            </label>
+            <label class="field">
+              <span class="field__label">下限（円）</span>
+              <input class="input" type="number" value="0" min="0" step="1000" />
+            </label>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary>素材</summary>
+          <div class="accordion__body">
+            <label class="check"><input type="checkbox" /> Silk</label>
+            <label class="check"><input type="checkbox" checked /> Cotton</label>
+            <label class="check"><input type="checkbox" /> Recycled</label>
+          </div>
+        </details>
+      </div>
+      <div class="drawer__foot">
+        <button class="btn btn--ghost" type="button" data-action="close-drawer">閉じる</button>
+        <button class="btn btn--primary" type="button" data-action="apply-filters">
+          適用
+        </button>
+      </div>
+    </aside>
+
+    <!-- Cart drawer -->
+    <aside class="drawer drawer--cart" data-drawer="cart" hidden aria-label="カート">
+      <div class="drawer__head">
+        <div class="drawer__title">カート</div>
+        <button class="iconbtn" type="button" data-action="close-drawer" aria-label="閉じる">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="drawer__body">
+        <div class="cartlist" data-cart-list>
+          <div class="cartitem" data-sku="JKT-002">
+            <div class="cartitem__img" data-img="p1"></div>
+            <div class="cartitem__body">
+              <div class="cartitem__top">
+                <div class="cartitem__name">Satin Shell Jacket</div>
+                <div class="cartitem__price">¥39,800</div>
+              </div>
+              <div class="muted">Color: Black · Size: M</div>
+              <div class="cartitem__ctrl">
+                <div class="qty" aria-label="数量">
+                  <button class="qty__btn" type="button" data-action="qty" data-delta="-1">−</button>
+                  <input class="qty__num" value="1" inputmode="numeric" aria-label="数量入力" />
+                  <button class="qty__btn" type="button" data-action="qty" data-delta="1">＋</button>
+                </div>
+                <button class="linklike" type="button" data-action="remove" data-sku="JKT-002">
+                  削除
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cartitem" data-sku="TEE-011">
+            <div class="cartitem__img" data-img="p2"></div>
+            <div class="cartitem__body">
+              <div class="cartitem__top">
+                <div class="cartitem__name">Sheer Long Tee</div>
+                <div class="cartitem__price">¥12,400</div>
+              </div>
+              <div class="muted">Color: Ash · Size: L</div>
+              <div class="cartitem__ctrl">
+                <div class="qty" aria-label="数量">
+                  <button class="qty__btn" type="button" data-action="qty" data-delta="-1">−</button>
+                  <input class="qty__num" value="1" inputmode="numeric" aria-label="数量入力" />
+                  <button class="qty__btn" type="button" data-action="qty" data-delta="1">＋</button>
+                </div>
+                <button class="linklike" type="button" data-action="remove" data-sku="TEE-011">
+                  削除
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cartitem" data-sku="BAG-014">
+            <div class="cartitem__img" data-img="p3"></div>
+            <div class="cartitem__body">
+              <div class="cartitem__top">
+                <div class="cartitem__name">Orbit Mini Bag</div>
+                <div class="cartitem__price">¥16,800</div>
+              </div>
+              <div class="muted">Color: Black · One size</div>
+              <div class="cartitem__ctrl">
+                <div class="qty" aria-label="数量">
+                  <button class="qty__btn" type="button" data-action="qty" data-delta="-1">−</button>
+                  <input class="qty__num" value="1" inputmode="numeric" aria-label="数量入力" />
+                  <button class="qty__btn" type="button" data-action="qty" data-delta="1">＋</button>
+                </div>
+                <button class="linklike" type="button" data-action="remove" data-sku="BAG-014">
+                  削除
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="summary">
+          <div class="summary__row">
+            <span class="muted">小計</span>
+            <span data-subtotal>¥69,000</span>
+          </div>
+          <div class="summary__row">
+            <span class="muted">送料</span>
+            <span data-shipping>¥0</span>
+          </div>
+          <div class="summary__row summary__row--total">
+            <span>合計</span>
+            <span data-total>¥69,000</span>
+          </div>
+          <label class="field">
+            <span class="field__label">クーポン</span>
+            <div class="inline">
+              <input class="input" placeholder="NOIRE10" />
+              <button class="btn btn--ghost" type="button" data-action="toast" data-toast="クーポンを適用（ダミー）">
+                適用
+              </button>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="drawer__foot">
+        <button class="btn btn--ghost" type="button" data-action="close-drawer">閉じる</button>
+        <button class="btn btn--primary btn--block" type="button" data-action="toast" data-toast="チェックアウト（ダミー）">
+          チェックアウトへ
+        </button>
+      </div>
+    </aside>
+
+    <!-- Quick view modal -->
+    <dialog class="modal" data-modal="quickview">
+      <form method="dialog" class="modal__frame modal__frame--wide">
+        <div class="modal__head">
+          <div class="modal__title">クイックビュー</div>
+          <button class="iconbtn" value="cancel" aria-label="閉じる">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="modal__body qv">
+          <div class="qv__img" data-qv-img data-img="p2"></div>
+          <div class="qv__info">
+            <div class="qv__name" data-qv-name>Sheer Long Tee</div>
+            <div class="qv__price" data-qv-price>¥12,400</div>
+            <div class="qv__desc" data-qv-desc>
+              透け感で“黒”を軽くする。レイヤリング用。
+            </div>
+            <div class="qv__row">
+              <div class="muted">Color</div>
+              <div class="swatches">
+                <button class="swatchBtn is-active" type="button" aria-label="Black" style="--c:#0b0c10"></button>
+                <button class="swatchBtn" type="button" aria-label="Ash" style="--c:#9aa1ac"></button>
+              </div>
+            </div>
+            <div class="qv__row">
+              <div class="muted">Size</div>
+              <div class="sizes">
+                <button class="size is-active" type="button">S</button>
+                <button class="size" type="button">M</button>
+                <button class="size" type="button">L</button>
+                <button class="size" type="button">XL</button>
+              </div>
+            </div>
+            <div class="qv__row">
+              <button class="btn btn--primary btn--block" type="button" data-action="add" data-qv-add data-sku="TEE-011">
+                カートに入れる
+              </button>
+              <button class="btn btn--ghost" type="button" data-action="wishlist">
+                ほしい物
+              </button>
+            </div>
+            <div class="divider"></div>
+            <div class="micro muted">
+              デモUI: サイズ/カラー選択は見た目のみ。
+            </div>
+          </div>
+        </div>
+        <div class="modal__foot">
+          <button class="btn btn--ghost" value="cancel">閉じる</button>
+          <button class="btn btn--primary" value="default">OK</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Generic info modal -->
+    <dialog class="modal" data-modal="info">
+      <form method="dialog" class="modal__frame">
+        <div class="modal__head">
+          <div class="modal__title" data-info-title>Info</div>
+          <button class="iconbtn" value="cancel" aria-label="閉じる">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="modal__body">
+          <div class="rich" data-info-body>
+            <p>ここに内容が入ります。</p>
+          </div>
+        </div>
+        <div class="modal__foot">
+          <button class="btn btn--primary" value="default">閉じる</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Toast -->
+    <div class="toasts" aria-live="polite" aria-relevant="additions" data-toasts></div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
