@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb クローン</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- ここにロゴ、検索バー、ナビゲーションが入ります -->
+        <nav class="nav-container">
+            <h1>Airbnb Clone</h1>
+            <div class="search-placeholder">検索を開始</div>
+            <div class="user-menu" id="menu-trigger">
+                <span>メニュー</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="categories-container">
+            <div class="category-item"><span>🏰</span><p>城</p></div>
+            <div class="category-item"><span>🏞️</span><p>最高の景色</p></div>
+            <div class="category-item"><span>🏊</span><p>素敵なプール</p></div>
+            <div class="category-item"><span>🏝️</span><p>無人島</p></div>
+            <div class="category-item"><span>🪵</span><p>ログハウス</p></div>
+            <div class="category-item"><span>⛺</span><p>キャンピングカー</p></div>
+            <div class="category-item"><span>❄️</span><p>北極圏</p></div>
+            <div class="category-item"><span>🎨</span><p>クリエイティブ</p></div>
+            <div class="category-item"><span>⛳</span><p>ゴルフ</p></div>
+        </nav>
+
+        <section class="property-grid" id="property-grid">
+            <!-- ここにJavaScriptでカードが自動挿入されます -->
+        </section>
+    </main>
+
+    <!-- フッターは後で追加します -->
+    <footer>
+        <p>&copy; 2023 Airbnb Clone. All rights reserved.</p>
+    </footer>
+
+    <!-- モーダルウィンドウ本体 -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-modal">&times;</button>
+            <h2>ログインまたは登録</h2>
+            <hr>
+            <p>Airbnbへようこそ</p>
+            <input type="text" placeholder="電話番号">
+            <button class="w-full p-3 bg-[#ff385c] text-white rounded-lg font-bold mt-5 cursor-pointer hover:bg-[#d9004c] transition-colors shadow-lg">続行</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
